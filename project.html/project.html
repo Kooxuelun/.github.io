@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="icon" href="image/logo1.jpg"  type="image/jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ST JOHN'S COLLEGE</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+
+    </head>
+    <body>
+        <section class="hyper">
+            <div class="nav-links ul li">
+                <ul>
+                    <li><a href="https://www.facebook.com/groups/mmucyber"><i class="bi-facebook"></i></a></li>
+                    <li><a href="https://instagram.com/mmumalaysia?igshid=YmMyMTA2M2Y="><i class="bi-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/mmumalaysia"><i class="bi-twitter"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="header">
+            <nav>
+                <a href="project.html"><img src="image/logo1.jpg"alt="An Image"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="project.html">HOME<i class="bi-house-fill"></i></a></li>
+                        <li><a href="about.html">ABOUT<i class="bi-person-lines-fill"></i></a></li>
+                        <li><a href="course.html">COURSE<i class="bi-book-half"></i></a></li>
+                        <li><a href="apply.html" target="_blank">APPLY<i class="bi-hand-index-thumb"></i></a></li>
+                        <li><a href="contact.html">CONTACT WITH US<i class="bi-chat-left-text"></i></a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            </nav>
+            <div class="text-box">
+                <h1>ST JOHN'S COLLEGE</h1>
+                <p>Come here to pursue your dreams</p>
+                <a href="visit.html" class="visit_button">Visit Here To Know More </a>
+            </div>
+        </section>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px ";
+            }
+        </script>
+    </body>
+</html>

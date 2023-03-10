@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="icon" href="image/logo1.jpg"  type="image/jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ST JOHN'S COLLEGE</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+
+    </head>
+    <body>
+        <section class="hyper">
+            <div class="nav-links ul li">
+                <ul>
+                    <li><a href="https://www.facebook.com/groups/mmucyber"><i class="bi-facebook"></i></a></li>
+                    <li><a href="https://instagram.com/mmumalaysia?igshid=YmMyMTA2M2Y="><i class="bi-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/mmumalaysia"><i class="bi-twitter"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="header4">
+            <nav>
+                <a href="project.html"><img src="image/logo1.jpg"alt="An Image"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="project.html">HOME<i class="bi-house-fill"></i></a></li>
+                        <li><a href="about.html">ABOUT<i class="bi-person-lines-fill"></i></a></li>
+                        <li><a href="course.html">COURSE<i class="bi-book-half"></i></a></li>
+                        <li><a href="apply.html" target="_blank">APPLY<i class="bi-hand-index-thumb"></i></a></li>
+                        <li><a href="contact.html">CONTACT WITH US<i class="bi-chat-left-text"></i></a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            </nav>
+        </section>
+            <hr>
+            <div class="foundation">
+                <h1>Foundation</h1>
+                <h3>Browse the Programmes</h3>
+            </div>
+            <div class="programme">
+                <div class="programme-col">
+                    <h3>Foundation</h3>
+                    <p>Foundation in Engineering</p>
+                    <h3>Entry Requirement</h3>
+                    <p>i)Pass SPM/O-Level or its equivalent with a minimum of Grade C in at least five (5) subjects inclusive of English, Mathematics or Add. Mathematics and one Engineering-related subject;<br>
+                        ii)Pass UEC with a minimum of Grade B in at least three (3) subjects inclusive of Mathematics, English and one Engineering-related subject.</p>
+
+                </div>
+                <div class="programme-col">
+                    <h3>Foundation</h3>
+                    <p>Foundation in Information Technology</p>
+                    <h3>Entry Requirement</h3>
+                    <p>i)Pass SPM/O-Level or its equivalent with a minimum of Grade C in at least five (5) subjects inclusive of Mathematics and English;<br>
+                        ii)Pass UEC with a minimum of Grade B in at least three (3) subjects inclusive of Mathematics and English.</p>
+                </div>
+                <div class="programme-col">
+                    <h3>Foundation</h3>
+                    <p>Foundation in Law</p>
+                    <h3>Entry Requirement</h3>
+                    <p>i)Pass SPM/O-Level or its equivalent with a minimum of Grade C in at least five (5) subjects, inclusive of Bahasa Malaysia AND the following English requirement:*</p>
+                </div>                
+            </div>
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                    navLinks.style.right="0";
+                }
+                function hideMenu(){
+                    navLinks.style.right="-200px ";
+                }
+            </script>
+    </body>
+</html>

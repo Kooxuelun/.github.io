@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <link rel="icon" href="image/logo1.jpg"  type="image/jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ST JOHN'S COLLEGE</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section class="apply-body">
+        <div class="container">
+            <div class="title">Registration</div>
+            <div class="content">
+              <form action="#" name="RegisterForm" onsubmit="return validateForm()">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" name="FullName" >
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" name="username">
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" name="useremail">
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" name="phonenumber">
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Level of Study</span>
+                    <input type=text name=study>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Field of Interest</span>
+                    <input type=text name=interest>
+                  </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                      <label for="dot-1">
+                      <span class="dot one"></span>
+                      <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                      <span class="dot two"></span>
+                      <span class="gender">Female</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="button">
+                  <input type="submit" value="Register">
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <script>
+            function validateForm() {
+                let a = document.forms ["RegisterForm"]["FullName"].value;
+                if (a == "") {
+                alert("Please provide your Name!");
+                return false;
+                }
+                var letters= /^[A-Za-z]/;
+                if (!a.match(letters))
+                {
+                    alert("Names should be in letters.");
+                    return false;
+                }
+                let b = document.forms ["RegisterForm"]["username"].value;
+                if (b == "") {
+                alert("Please provide your username!");
+                return false;
+                }
+                var letters= /^[A-Za-z]/;
+                if (!b.match(letters))
+                {
+                    alert("Usernames should be in letters.");
+                    return false;
+                }
+                let c = document.forms ["RegisterForm"]["useremail"].value;
+                if (c == "") {
+                alert("Please provide your email address!");
+                return false;
+                }
+                let d = document.forms ["RegisterForm"]["phonenumber"].value;
+                if (d == "") {
+                alert("Please provide your phone number!");
+                return false;
+                }
+                let e = document.forms ["RegisterForm"]["study"].value;
+                if (e == "") {
+                alert("Level of study should not be empty");
+                return false;
+                }
+                let f = document.forms ["RegisterForm"]["interest"].value;
+                if (f == "") {
+                alert("Please fill up your interest");
+                return false;
+                }
+            if ((RegisterForm.gender[0].checked ==false)&&(RegisterForm.gender[1].checked==false))
+            {
+            alert("Please choose Gender:Male or Female");
+            return false;
+            }
+            }
+        </script>
+        
+    </body>
+</html>

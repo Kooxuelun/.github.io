@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="icon" href="image/logo1.jpg"  type="image/jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ST JOHN'S COLLEGE</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+
+    </head>
+    <center>
+    <body>
+        <section class="contact">
+            <nav>
+                <a href="project.html"><img src="image/logo1.jpg"alt="An Image"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="project.html">HOME<i class="bi-house-fill"></i></a></li>
+                        <li><a href="about.html">ABOUT<i class="bi-person-lines-fill"></i></a></li>
+                        <li><a href="course.html">COURSE<i class="bi-book-half"></i></a></li>
+                        <li><a href="apply.html" target="_blank">APPLY<i class="bi-hand-index-thumb"></i></a></li>
+                        <li><a href="contact.html">CONTACT WITH US<i class="bi-chat-left-text"></i></a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </section>
+            <div class="contact-col">
+                <h1>Contact Us</h1>
+                <p>Have something to share with us? </p>
+            </div>
+
+        <div class="contact-row">
+            <div class="contact-col">
+                <h3>General Line</h3>
+                <hr width="fit-content">
+                <p>Tel: +6 07-553 3333</p>
+            </div>
+            <div class="contact-col">
+                <h3>Mailing Address</h3>
+                <hr width="fit-content">
+                <p>Persiaran Multimedia, 63100 Cyberjaya, Selangor</p>
+            </div>
+            <div class="contact-col">
+                <h3>Need to ask something about the websites?</h3>
+                <hr width="fit-content">
+                <p font-weight="bold">Email:
+                <a href="mailto: webmaster@utm.my"> webmaster@utm.my</a></p>
+            </div>
+        </div>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px ";
+            }
+        </script>
+    </body>
+    </center>
+</html>

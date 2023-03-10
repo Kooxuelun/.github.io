@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>More Information</title>
+        <link rel="icon" href="image/logo1.jpg"  type="image/jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <section class="hyper">
+            <div class="nav-links ul li">
+                <ul>
+                    <li><a href="https://www.facebook.com/groups/mmucyber"><i class="bi-facebook"></i></a></li>
+                    <li><a href="https://instagram.com/mmumalaysia?igshid=YmMyMTA2M2Y="><i class="bi-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/mmumalaysia"><i class="bi-twitter"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="header2">
+            <nav>
+                <a href="project.html"><img src="image/logo1.jpg"alt="An Image"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="project.html">HOME<i class="bi-house-fill"></i></a></li>
+                        <li><a href="about.html">ABOUT<i class="bi-person-lines-fill"></i></a></li>
+                        <li><a href="course.html">COURSE<i class="bi-book-half"></i></a></li>
+                        <li><a href="apply.html" target="_blank">APPLY<i class="bi-hand-index-thumb"></i></a></li>
+                        <li><a href="contact.html">CONTACT WITH US<i class="bi-chat-left-text"></i></a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Attending a university with exceptional facilities will enhance your student experience and give you the areas to socialise, study and exercise.</p>
+            <div class=row>
+                <div class="facilities-col">
+                    <img onmouseover="bigimg(this)" onmouseout="normalimg(this)" src="image/computer.jpg">
+                    <h3>3000+ computers</h3>
+                    <p>Installed on Windows, UNIX and Apple OS platforms for students to use in study and research labs</p>
+                </div>
+                <div class="facilities-col">
+                    <img onmouseover="bigimg(this)" onmouseout="normalimg(this)" src="image/internet.jpg">
+                    <h3>24/7 Wireless Internet</h3>
+                    <p>Covering the entire school area</p>
+                </div>            
+                <div class="facilities-col">
+                    <img onmouseover="bigimg(this)" onmouseout="normalimg(this)" src="image/library.jpg">
+                    <h3>2 libraries</h3>
+                    <p>Over 100,000 square feet of gross floor area and 295,000 books, publications and numerous online research books</p>
+                </div>
+            </div>
+            <div class=row>
+                <div class="facilities-col">
+                    <img onmouseover="bigimg(this)" onmouseout="normalimg(this)" src="image/lab.jpg">
+                    <h3>120+ labs and workshops</h3>
+                    <p>For architecture, art, audio, biochemistry, engineering (various), building management, design studios, pre-schools, biosciences, iMAC, internet/online broadcasting, journalism, PC, photography, simulation wards and Chinese medicine centres</p>
+                </div>
+                <div class="facilities-col">
+                    <img onmouseover="bigimg(this)" onmouseout="normalimg(this)"src="image/restaurant.jpg">
+                    <h3>Restaurant</h3>
+                    <p>We offer a wide range of food on campus at reasonable prices and in a comfortable dining environment</p>
+                </div>            
+                <div class="facilities-col">
+                    <img onmouseover="bigimg(this)" onmouseout="normalimg(this)" src="image/gym.jpg">
+                    <h3>Gymnasium & Fitness Room</h3>
+                    <p>Students have access to a fully equipped gymnasium  On the  We have gymnasiums for basketball, futsal, netball, tennis, volleyball and badminton. Students can also use off-campus facilities such as the swimming pool and squash courts for a nominal fee</p>
+                </div>
+            </div>
+            <div class=row>
+                <div class="facilities-col">
+                    <img onmouseover="bigimg(this)" onmouseout="normalimg(this)" src="image/agama.jpg">
+                    <h3>Religious places</h3>
+                    <p>Our campus has a Surau or Muslim prayer room. The campus is surrounded by mosques, churches and temples</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px ";
+            }
+            function bigimg(x) {x.style.height="120%";x.style.width="110%";}
+            function normalimg(x) {x.style.height="100%";x.style.width="100%"}
+        </script>
+    </body>
+</html>
